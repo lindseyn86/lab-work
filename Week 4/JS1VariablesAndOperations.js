@@ -52,22 +52,23 @@ Question 1. Creating & 'console.log()'ing variables \n`);
  * ↓ YOUR CODE HERE ↓ */
 
 console.log("Step 1:  Number of Seats on a Plane");
-
+var flightSeats = 82;
 
 console.log("Step 2:  Cost of Groceries");
-
+var groceryCost = 210.26;
 
 console.log("Step 3:  Middle Initial");
-
+var middleInitial = "L"
 
 console.log("Step 4:  Is it Hot Outside?");
+var isHotOutside = "true"
 
 
 console.log("Step 5:  First Name");
-
+var firstName = "Sarah";
 
 console.log("Step 6:  Street Address");
-
+var streetAddress = "123 Main St";
 
 /*-------------------------------------------------------*/
 
@@ -85,7 +86,7 @@ Question 2. Creating & 'console.log()'ing variables \n`);
     console.log('Remove Plane Seats:')
 //	A customer booked 2 plane seats. Remove 2 seats from the available seats variable
 //  ↓ YOUR CODE HERE ↓
-
+var removeSeats = flightSeats - 2
 
     console.log('Buy a Candy Bar:')
 //	Impulse candy bar purchase! Add 2.15 to the grocery total
