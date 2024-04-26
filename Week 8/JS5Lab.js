@@ -203,9 +203,9 @@ class Teacher extends Person {
  * ↓ YOUR CODE HERE ↓ */
 let student = new Student('Jacky', 'student')
 let teacher = new Teacher('Mr. Bean', 'teacher')
+console.log(student.introduction(), student.details());
+console.log(teacher.introduction(), teacher.details());
 
-console.log(student.introduction().Student.details())
-console.log(teacher.introduction())
 
 /*-------------------------------------------------------*/
 // Question 6: Inheritance
@@ -232,6 +232,14 @@ class Parent {
  * HINT: You should be using vital key terms like extends and super
  *
  * ↓ YOUR CODE HERE ↓ */
+class Child extends Parent {
+  constructor(name, age) {
+    super(name, age)
+  }
+}
+let child = new Child('Pugsley', '10')
+
+console.log(child.details());
 
 /*-------------------------------------------------------*/
 // Question 7: Put it all together
@@ -251,21 +259,46 @@ Question 7: Put it all together \n`)
  * Step 10: Display the movies information to the console, using the new instance list
  *
  * ↓ YOUR CODE HERE ↓ */
-
-class Movie{
+class Movie {
   constructor(title, director) {
-    this.title = title
-    this.director = director
+    this.title = title;
+    this.director = director;
   }
 
   describe() {
-    console.log(`The movie ${this.title} was directed by ${this.director}.`)
+    return `The movie ${this.title} was directed by ${this.director}.`;
   }
 }
 
 class List {
-  constructor(){
+  constructor() {
+    this.movies = [];
+  }
 
+  addMovie(movie) {
+    this.movies.push(movie);
+  }
+
+  displayMovies() {
+    for (let movie of this.movies) {
+      console.log(movie.describe());
+    }
   }
 }
+
+const movie1 = new Movie("Jurassic Park", "Steven Spielberg");
+const movie2 = new Movie("How the Grinch Stole Christmas", "Ron Howard");
+
+console.log(movie1.describe());
+
+console.log(movie2.describe());
+
+const list = new List();
+list.addMovie(movie1);
+list.addMovie(movie2);
+
+list.displayMovies();
+
+
+
 console.log(`-----------Finished------------`)
