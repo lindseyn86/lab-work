@@ -50,7 +50,7 @@ let myInput = document.createElement('input');
 
 console.log(myForm)
 //Question: Besides changing the innerHTML, what other HTML things can we change using JavaScript?
-//Answer:
+//Answer: You can update multiple styles by overriding css that has been input. 
 
 /*------------------------ Styling a form with only JavaScript------------------------*/
 console.log(`-------------------------- 
@@ -67,7 +67,7 @@ Part 2: Styling our form with only JavaScript`)
  * ↓ YOUR CODE HERE ↓ */
 
 //Question: Do you prefer styling with JavaScript or CSS?
-//Answer:
+//Answer: I prefer styling with CSS because I like that there is a separate file just for styles. You can style things globally with css as well so it is easy to update all elements.
 
 /*------------------------ Creating a table with only JavaScript ------------------------*/
 console.log(`-------------------------- 
@@ -86,10 +86,10 @@ Part 3: Creating a table with only JavaScript`)
  * Final Step: Style your table using JavaScript starting with a border. You may need to target more element/nodes than we did with myTable.
  * ↓ YOUR CODE HERE ↓ */
 
-// console.log(myTable)
+console.log(myTable)
 //Question: While this is clearly a more round-about way of making a table, how can using JavaScript in this way
 //          more beneficial than HTML?
-//Answer:
+//Answer: This way of creating a table has less of an impact on load time and effort it takes for page loading. Instead of loading data multiple times, it loads it once.
 
 /*------------------------ Changing our body background on click ------------------------*/
 console.log(`-------------------------- 
