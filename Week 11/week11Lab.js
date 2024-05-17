@@ -39,10 +39,9 @@
 	* ↓ YOUR CODE HERE ↓ */
 
 
-
-
-
-
+function replaceTextInDiv(){
+		
+};
 
 
 
