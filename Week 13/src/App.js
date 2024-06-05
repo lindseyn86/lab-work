@@ -1,9 +1,7 @@
-/*
-  Copyright (c) 2023 Promineo Tech
-  Author:  Promineo Tech Academic Team
-  Subject:  React Week 13 - Intro to React, Webpack, Components, and JSX 
-  FE Lab Week 13
-*/
+/* Copyright (c) 2023 Promineo Tech
+   Author:  Promineo Tech Academic Team
+   Subject:  Week 13: Intro to React, Webpack, Components, and JSX 
+   JavaScript Lab Week 13*/
 
 /* ----------------------------------------------------- */
 // Key Term List:
@@ -26,18 +24,20 @@
 /* ------------------ Part 1: Creating a Nav Bar Component --------------------- */
 /**
  * Step 1: Create a new file in our src folder called Nav.js
- * Step 2: Create the base format for a class-based component.
+ * Step 2: Create the base format for a function.
  *         Inside of the return(), return: <nav>Nav</nav>
  * Step 3: In your App.js, import your <Nav> component inside of the div in return()
  *         You should now see the text 'Nav' on your app.
- *         Don't forget to 'npm start' in the console if you aren't on a live server yet.
- * Step 4: In your Nav.js file, add an <ul>, and 3 <li> inside your <nav> element.
+ *         Don't forget to 'npm start' in the console if you aren't on a live server yet. NOTE you 
+ *         aren't using the live server extension, your using the built in one from npm.
+ *
+ * Step 4: Instead of returning just a <div>, return a <nav> with an <ul>, and 3 <li>.
  *         The text inside the 3 <li> should be: Home, Portfolio, and Contact
  * Step 5: Style your Nav component using the app.css file.
  *         Give your <nav> element: 100vw
  *                                  (100 view width makes the width the size of their screen)
  *         Give your <ul> element: display: flex, flex-direction: row, justify-content: right
- *         The rest is up to you! Consider pseudo:selectors, such as hover/active/touch
+ *         The rest is up to you! Consider peudo:selectors, such as hover/active/touch
  *
  *         Alternatively, refer to Week 9 and use bootstrap instead.
  *         Remember when we give elements classes in React, we use className=""
@@ -72,9 +72,16 @@
 
 /* -- ALL YOUR COMPONENT/STYLE IMPORTS HERE -- */
 import './App.css'
+import Nav from './Nav'
+import Section from './Section'
 
 function App() {
-  return <div className="App"></div>
+  return (
+    <div className="App">
+      <Nav/>
+      <Section/>
+    </div>
+  )
 }
 
 export default App
