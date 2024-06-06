@@ -38,3 +38,7 @@
   background-color: #eeeeee;
   padding: 1em;
 }
+
+.appointmentTable {
+  border: 2px double black;
+}
